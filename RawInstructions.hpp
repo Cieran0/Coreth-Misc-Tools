@@ -1,0 +1,25 @@
+typedef unsigned char u8;
+typedef unsigned long u64;
+
+void do_nothing ();
+void mov_reg_u64 (u8 regNum, u64 num);
+void mov_reg_reg (u8 regNum1, u8 regNum2);
+void mov_reg_mem (u8 regNum, u64 memPos);
+void mov_mem_u64_u64 (u64 memPos, u64 num);
+void mov_mem_u64_reg (u64 memPos, u8 regNum);
+void push ();
+void pop ();
+void write ();
+void read ();
+void syscall ();
+void jmp (u64 pos);
+void jmpz (u64 pos);
+void jmpnz (u64 pos);
+void cmp (u8 type);
+void call (u64 pos);
+void ret ();
+void add_reg_u64 (u8 regNum, u64 num);
+void add_reg_reg (u8 regNum1, u8 regNum2);
+void add_reg_mem (u8 regNum, u64 memPos);
+void add_mem_u64_u64 (u64 memPos, u64 num);
+void add_mem_u64_reg (u64 memPos, u8 regNum);
